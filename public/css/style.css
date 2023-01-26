@@ -1,0 +1,1380 @@
+@charset "utf-8";
+@import url("reset.css");
+
+.box_all{
+  background-color: #fff;
+  border-radius: 3px;
+  width: 88%;
+  padding-top: 20px;
+  margin:0 auto;
+}
+.astrisk{
+  color:#e7898c;
+  margin:0;
+}
+
+/* =================================================
+reservation_history
+================================================= */
+.list_bt{
+  padding: 5px;
+  font-size: 16px;
+  width:100%;
+  height: 100%;
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  border-radius: 3px;
+}
+.list_bt:hover{
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+.msg_cxl{
+  color: #ff9467;
+}
+#delete_bt{
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  width: 100%;
+  height: 3%;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 2px;
+  margin: 3px 0 15px 0;
+}
+#edit_bt{
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  width: 100%;
+  height: 3%;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 2px;
+  margin: 7px 0 15px 0;
+}
+#edit_bt:hover, #delete_bt:hover {
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+
+/* =================================================
+comp_base.blade.php
+reservation_comp.blade.php
+================================================= */
+.comp_h4{
+  text-align: center;
+  padding: 0;
+}
+.comp_h4::after,.comp_h4::before{
+  display: none;
+}
+/*aタグ2つ並べる時用*/
+.comp_a{
+  margin: 0 3%;
+  color: #705339;
+}
+.comp_a:hover{
+  color:#ff9467;
+}
+/* =================================================
+rogin.blade.php
+================================================= */
+.error_msg{
+  color:#ff9467;
+}
+.return_top{
+  text-align: center;
+  margin-left: 80%;
+  width:89%;
+  margin-left: 5%;
+  margin-right: 10%;
+  text-align: right;
+}
+.return_top1{
+  text-align: right;
+  margin-left: 80%;
+}
+.return_a{
+  text-align: right;
+}
+.msg_p1 {
+  color: #705339;
+  text-align: center;
+}
+.msg_sml{
+  color: #ff9467;
+  font-size: 10px;
+}
+.a_color{
+  text-align: center;
+  color: #705339;
+}
+.rogin_input1{
+  width:50%;
+  text-align: left;
+}
+.rogin_input2{
+  margin-left: 1%;
+  width:50%;
+}
+.label_item{
+  width:30%;
+  text-align: right;
+}
+
+/* =================================================
+comp_base.blade.php
+================================================= */
+.comp_p{
+  color: #705339;
+  text-align: center;
+}
+.div_a{
+  text-align: center;
+  font-size: 13px;
+  width: 100%;
+  margin-top: 3%;
+}
+.div_a a{
+  text-align: center;
+  color: #705339;
+}
+.div_a a:hover{
+  text-align: center;
+  color: #ff9467;
+}
+
+/* =================================================
+rogin.blade.php
+================================================= */
+.msg{
+  color: #705339;
+  text-align: center;
+}
+.input_box{
+  color: #705339;
+  width:100%;
+  margin: 0 auto;
+}
+.sub_bt{
+  margin-top: 1.5%;
+  width:10%;
+  height:5%;
+  padding: 5px;
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+}
+.sub_bt:hover{
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+.rogin{
+  width: 25%;
+  margin-top: 0;
+}
+
+/* =================================================
+reset_request.blade.php
+================================================= */
+.msg_caution{
+  color: rgba(112, 83, 57, 0.8);
+  font-size: 14px;
+}
+
+/* =================================================
+user_home.blade.php
+================================================= */
+header{
+  width:100%;
+  display: flex;
+  margin: 0px;
+  position: relative;
+  height: 100px;
+}
+.title{
+  width:40%;
+  height:40%;
+  padding: 0px 15px 0px 0px;
+  margin:1% 0;
+  font-size: 70px;
+  color:#754F44;
+  opacity: 0.6;
+  font-family: Vladimir Script;
+  font-weight: 500;
+  text-align: left;
+}
+.btn{
+  opacity: 0.6;
+  z-index: 500;
+  margin-right: 3%;
+  width: 25%;
+  height:50px;
+  color:#705339;
+  background:rgba(255,233,88,0.8);
+  font-size:12px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  background-color: #FBFFB9;
+}
+.btn_a{
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color:#705339;
+  font-size:14px;
+  font-weight: 400;
+}
+.btn:hover{
+  opacity: 0.5;
+  background-color:rgba(236, 115, 87, 0.8);
+  border: 1px solid #754F44;
+  color:#fff;
+  border: none;
+  background: -webkit-gradient( linear, left top, left bottom, from(#ff9467), to(#ff9467));
+  background: transparent -moz-linear-gradient(center top , #ff9467 0%, #ff9467) repeat scroll 0% 0%;
+  background-color:#ff9467;
+  color:#fff;
+}
+.btn_a:hover{
+  color:#fff;
+}
+.btn:before, .btn:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+.btn:before{
+  top: 0;
+  left: 0;
+  border-width: 25px 0px 25px 15px;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+}
+.btn:after{
+  top: 0;
+  right: 0;
+  border-width: 25px 15px 25px 0px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+.btn{
+  display: inline-block;
+  position: relative;
+  margin: 5px 10px;
+  height: 50px;/*リボンの高さ*/
+  line-height: 50px;/*リボンの高さ*/
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 30px;/*横の大きさ*/
+  font-size: 15px;/*文字の大きさ*/
+  background: rgba(255,233,88,0.8);/*塗りつぶし色*/
+  color: #705339;/*文字色*/
+  text-align:center;
+  box-sizing: border-box;
+  width: 25%;
+}
+.nav_box{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  padding-right: 10px;
+}
+
+.user_top_img{
+  position: absolute;
+  top: 18%;
+  right: 20%;
+  opacity: 0.5;
+  width: 30%;
+  height:40%;
+}
+.uhome_h4{
+  margin-left: 0;
+  margin-top: 5%;
+  width: 80%;
+}
+.request_box{
+  margin-left: 0;
+}
+.asterisk{
+  font-size: 10px;
+  color: #e7898c;
+}
+.box3{
+  background-color: #fdf8db;
+  border:1px solid #705339;
+  border-radius: 5px;
+  width:100%;
+  position: relative;
+  margin: 20px 0 10px 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.text{
+  margin-top: 0;
+  width: 100%;
+  height: 150px;
+}
+#submit{
+  padding: 5px;
+  font-size: 16px;
+  width:30%;
+  height: 10%;
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  border-radius: 3px;
+  margin : 3% 0 10% 35%;
+}
+#submit:hover{
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+.menuList{
+  width:100%;
+  margin-bottom: 2%;
+  margin-left: 25%;
+}
+.rogout{
+  color: #997b61;
+  text-align: right;
+  margin-right: 5%;
+}
+input[type="radio"]{
+  border-radius: 1px;
+  margin-left: 0;
+}
+.stylist_radio{
+  margin: 1% 5%;
+}
+
+/* =================================================
+stylist_home
+tableとかlist関係はここ参考に
+================================================= */
+.list_bt{
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+.list_bt:hover{
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+.table_list {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color:#705339;
+  background:rgba(255,233,88,0.8);
+}
+.table_list tr:nth-child(2n+1) {
+  background-color: #fdf8db;
+  color:#705339;
+}
+.table_list th {
+  padding: 10px;
+  border: solid 1px rgba(112, 83, 57, 0.2);
+  background-color: #fdf8db;
+  color:#705339;
+}
+.table_list td {
+  padding: 10px;
+  border: solid 1px rgba(112, 83, 57, 0.2);
+  background-color: #fdf8db;
+  color:#705339;
+}
+.schedule_table_list {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color:#705339;
+  background:rgba(255,233,88,0.8);
+}
+.schedule_table_list tr:nth-child(2n+1) {
+  background-color: #fdf8db;
+  color:#705339;
+  box-sizing:border-box;
+}
+.schedule_table_list th {
+  padding: 1px;
+  width:65px;
+  border: solid 1px rgba(112, 83, 57, 0.2);
+  background-color: #fdf8db;
+  color:#705339;
+  box-sizing:border-box;
+}
+.schedule_table_list td {
+  padding: 1px;
+  border: solid 1px rgba(112, 83, 57, 0.2);
+  background-color: #fdf8db;
+  color:#705339;
+  box-sizing:border-box;
+}
+/*コメントだけ横幅固定*/
+.list_design{
+  width:330px;
+  table-layout: fixed;
+}
+/*チェックボックス装飾*/
+.checkbox01 {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 30px;
+  position: relative;
+  width: auto;
+}
+.checkbox01::before {
+  background: #fff;
+  border: 1px solid #231815;
+  content: '';
+  display: block;
+  height: 16px;
+  left: 5px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  width: 16px;
+}
+.checkbox01::after {
+  border-right: 3px solid #ff9467;
+  border-bottom: 3px solid #ff9467;
+  content: '';
+  display: block;
+  height: 9px;
+  left: 10px;
+  margin-top: -7px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 5px;
+}
+
+/* =================================================
+reservation
+================================================= */
+input[type="checkbox"]{
+  border-radius: 1px;
+  margin-left: 0;
+}
+.time_th{
+  font-size: 14px;
+  color: #444a5a;
+  border: 1px solid #705339;
+  padding-right: 5px;
+  margin-right: 2px;
+}
+.time_td{
+  font-size: 14px;
+  color: #444a5a;
+  border: 1px solid #705339;
+  border-radius: 5px;
+}
+.calendar{
+  color: #444a5a;
+  width: 100%;
+  margin: 0;
+  background-color: #fdf8db;
+  border-radius: 5px;
+}
+.msg_p2{
+  font-size: 12px;
+  color: #ff9467;
+  text-align: left;
+}
+.msg_p3{
+  font-size: 15px;
+  color: #ff9467;
+  text-align: left;
+}
+.msg_p4{
+  font-size: 15px;
+  color: #705339;
+  text-align: left;
+}
+
+.uhome_h3{
+  text-align: center;
+  width: 30%;
+  margin: 1% 35% 1% 35%;
+}
+
+/* =================================================
+reservation_confirm
+================================================= */
+
+.sb_bt{
+  padding: 5px;
+  font-size: 16px;
+  width:30%;
+  height: 10%;
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  border-radius: 3px;
+}
+.sb_bt:hover{
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+.bt_box{
+  display: flex;
+}
+#reservation{
+  margin: 2% 1.5% 0 auto;
+}
+#return{
+  margin: 2% auto 0 1.5%;
+}
+
+/* =================================================
+confirm_base
+================================================= */
+.textarea_box{
+  margin: 0 20px;
+  width: 100%;
+  height: 35px;
+  padding: 3px 0;
+  border: 1px solid #D2B48C;
+  border-radius: 5px;
+  color:#705339;
+}
+.msg_confirm{
+  margin-left: 20px;
+  text-align: left;
+  color:#705339;
+}
+.item{
+  width:80%;
+  margin-right: 0;
+}
+
+/* =================================================
+全体指定
+================================================= */
+
+body {
+  color:#444a5a;
+  background-color: #fff;
+  word-break : break-all;
+  word-wrap : break-word;
+  overflow-wrap : break-word;
+}
+
+/* =================================================
+リンク
+================================================= */
+
+a{
+  text-decoration:none;
+}
+
+a:visited{
+  color:rgba(112, 83, 57, 0.3);
+}
+
+a:hover {
+  color:#ff9467;
+}
+.a_color:hover{
+  color:#ff9467;
+}
+
+a:active {
+  color:#d34128;
+}
+
+/* =================================================
+見出し・文字
+================================================= */
+
+/* 見出し（h1） */
+
+h1{
+  display:inline-block;
+  padding:40px;
+  background-color: rgba(253,248,219,0.9);
+  color:#d34128;
+  font-size:64px;
+  font-family: 'Amatic SC', 'Kosugi Maru', cursive;
+  text-align: center;
+}
+
+/* 見出し（h2） */
+/* 茶色のライン付きの見出し*/
+.heading2 {
+  position: relative;
+  margin-bottom: 0;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  color:#3f3531;
+  color:#705339;
+  text-align: center;
+}
+
+/*h2 黄色のライン付きの見出し*/
+.heading2:after {
+  position: absolute;
+  padding-bottom: 0;
+  margin-bottom: 5%;
+  top:-20px;
+  left: 0;
+  content: '';
+  height: 10px;
+  width: 100%;
+  background: -webkit-repeating-linear-gradient(45deg, #fff, #fff 2px, #705339 2px, #705339 4px);
+  background: repeating-linear-gradient(45deg, #fff, #fff 2px, #705339 2px, #705339 4px);
+  opacity: 0.7;
+}
+h2 {
+  position: relative;
+  padding-bottom: .5em;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  color:#3f3531;
+  color:#705339;
+  text-align: center;
+}
+/* 見出し（h3） */
+h3 {
+  display: inline-block;
+  position: relative;
+  margin: 25px 0px;
+  height: 50px;/*リボンの高さ*/
+  line-height: 50px;/*リボンの高さ*/
+  vertical-align: middle;
+  text-align: center;
+  padding: 0 30px;/*横の大きさ*/
+  font-size: 18px;/*文字の大きさ*/
+  background: rgba(255,233,88,0.7);/*塗りつぶし色*/
+  color: #705339;/*文字色*/
+  text-align:center;
+  box-sizing: border-box;
+  opacity: 0.7;
+}
+h3:before, h3:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+h3:before{
+  top: 0;
+  left: 0;
+  border-width: 25px 0px 25px 15px;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+}
+h3:after{
+  top: 0;
+  right: 0;
+  border-width: 25px 15px 25px 0px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+
+/* 見出し（h4） */
+h4 {
+  width: 180px;
+  position: relative;
+  margin:25px 42%;
+  padding-left: 30px;
+  font-size:18px;
+  color: #705339;
+}
+h4::before,
+h4::after{
+  content: "□";
+  position: absolute;
+}
+h4::before{
+  left:0;
+  top:-3px;
+}
+h4::after{
+  left: 5px;
+  top: 3px;
+  color: #997b61;
+}
+/* 見出し（h5） */
+h5{
+  margin:20px 0px;
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #3c773b;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #3c773b;/*左線*/
+  text-align:left;
+}
+
+/* 見出し（h6） */
+h6{
+  margin:20px 0px;
+  text-align:left;
+}
+
+/* p */
+p{
+  /* 上下の余白 */
+  margin:20px 0px;
+  text-align:center;
+}
+
+/* 太字/強調 */
+.bold{
+  margin:0px 3px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #d34128;
+  font-weight: bold;
+}
+
+/* =================================================
+その他
+================================================= */
+/*トプ画*/
+.top_img{
+  width: 50%;
+  height:30%;
+}
+
+/*全体のレイアウト*/
+
+#wrapper{
+  background: url(../images/bg_footer.png) center bottom no-repeat;
+  margin-right:auto;
+  margin-left:auto;
+  background-color: #fff;
+  box-sizing:border-box;
+}
+
+header,main,footer{
+  display:block; /* IE対策 */
+  margin:auto;
+  text-align:center;
+}
+
+/*ul,olのマーカーや数字*/
+ul,ol{
+  list-style-position: inside;
+}
+
+ul{
+  list-style: none;
+}
+
+/* トップへ戻るリンク */
+p.top{
+  padding-right:5px;
+  text-align:right;
+  box-sizing:border-box;
+}
+
+/* 入力フォーム関係 */
+/*input のクラス名に
+[inp]で統一する
+input,textarea*/
+.inp,textarea{
+  margin:10px 0px;
+  padding:10px;
+  font-size:16px;　/*16px以下はスマホなどでズームしてしまいます*/
+  border:0px;
+  border-radius: 10px;	/* CSS3草案 */
+  -webkit-border-radius: 10px;	/* Safari,Google Chrome用 */
+  -moz-border-radius: 10px;	/* Firefox用 */
+  box-sizing:border-box;
+  background:#fdf8db;
+  border:1px solid #fff;
+  text-decoration: none;
+  outline: none;
+  -webkit-appearance:none;
+}
+
+textarea{
+  width:100%;
+  height:100px;
+}
+
+/*input要素のクラス名をinpに統一する*/
+.inp::before,
+.inp::after,
+textarea::before,
+textarea::after, {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+
+.inp,
+.inp::before,
+.inp::after,
+textarea,
+textarea::before,
+textarea::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.inp:hover,
+.inp:focus,
+textarea:hover,
+textarea:focus{
+  background:rgba(255,233,88,0.7);
+  color:#3f3531;
+  border:1px solid rgba(255,233,88,0.7);
+}
+
+input[type="button"],
+input[type="submit"]{
+  background: -webkit-gradient( linear, left top, left bottom, from(#705339), to(#705339));
+  background: transparent -moz-linear-gradient(center top , #705339 0%, #705339) repeat scroll 0% 0%;
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background: -webkit-gradient( linear, left top, left bottom, from(#ff9467), to(#ff9467));
+  background: transparent -moz-linear-gradient(center top , #ff9467 0%, #ff9467) repeat scroll 0% 0%;
+  background-color:#ff9467;
+  border: 1px solid #ff9467;
+  color:#fff;
+}
+
+/*admin　ホーム画面ボタン*/
+.sub{
+  padding: 5px;
+  font-size: 16px;
+  width:70%;
+  height: 50%;
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  border-radius: 3px;
+  margin :0 0 1% 0;
+}
+.sub:hover{
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+.admin_rogout{
+  position: absolute;
+  top:5px;
+  right:7px;
+}
+/*横幅固定*/
+.user_list_design{
+  width:150px;
+  table-layout: fixed;
+}
+#sub{
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  width: 70%;
+  height: 10%;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 2px;
+  margin: 5px 10% 15px 10%;
+
+}
+#sub:hover{
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+.td_bt{
+  width:200px;
+}
+.comp_color{
+  color: #e7898c;
+}
+.cxl{
+  width:100%;
+  height: 80%;
+  margin-bottom: 5%;
+}
+#del_bt{
+  background-color:#705339;
+  border: 1px solid #705339;
+  color:#fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Sacramento','Kosugi Maru', cursive;
+  width: 20%;
+  height: 8%;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 2px;
+  margin: 5% 30% 15px 40%;
+}
+#del_bt:hover {
+  background-color: #ff9467;
+  border: 1px solid #ff9467;
+}
+/*横幅固定*/
+.res_list_design{
+  width:200px;
+}
+/*横幅固定*/
+.u_res_list_design{
+  width:80px;
+}
+.res_textarea_box{
+  margin: 3px 0px;
+  width: 100%;
+  height: 35px;
+  padding: 3px 0;
+  border: 1px solid #D2B48C;
+  border-radius: 5px;
+  color:#705339;
+}
+
+/*ボックスデザイン*/
+
+/*①チェック柄*/
+.box1{
+  position: relative;
+  margin: 20px 0px;
+  padding: 15px;
+  background-color: #fff;
+  background-image: linear-gradient(-45deg, rgba(153,123,97,.5) 25%, transparent 25%, transparent 50%, rgba(153,123,97,.5) 50%, rgba(153,123,97,.5) 75%, transparent 75%, transparent 100%), linear-gradient(45deg, rgba(153,123,97,.5) 25%, transparent 25%, transparent 50%, rgba(153,123,97,.5) 50%, rgba(153,123,97,.5) 75%, transparent 75%, transparent 100%);
+  background-size: 40px 40px;
+  box-sizing: border-box;
+  text-align:left;
+}
+
+/*②ストライプ柄*/
+.box2 {
+  width:90%;
+  position: relative;
+  margin: 20px auto;
+  padding: 15px;
+  background: -webkit-repeating-linear-gradient(45deg, #fff, #fff 2px, #ffe958 2px, #ffe958 4px);
+  background: repeating-linear-gradient(45deg, #fff, #fff 2px, #ffe958 2px, #ffe958 4px);
+  background-size: 40px 40px;
+  box-sizing: border-box;
+  text-align:left;
+  color: #705339;
+  text-align: center;
+  width:90%;
+  margin: 25px auto;
+}
+
+/*文字の背景を白にさせる*/
+.naka{
+  padding:15px;
+  background-color: rgba(255,255,255,0.9);
+  box-sizing:border-box;
+  color: #705339;
+  text-align: center;
+}
+
+/*link*/
+ul.link{
+  display:flex;
+  flex-wrap: wrap;
+  margin:10px 0px;
+}
+
+ul.link li{
+  margin:0px 5px 7px 0px;
+}
+
+ul.link li a{
+  border-bottom:3px solid #ffe958 ;
+}
+
+/*
+*faq
+*/
+
+#QandA-1 {
+  width: 100%;
+  font-family: メイリオ;
+  font-size: 14px; /*全体のフォントサイズ*/
+}
+#QandA-1 .faq_title {
+  color: #705339;
+  text-align: center;
+}
+.faq_title::after,.faq_title::before{
+  display: none;
+}
+#QandA-1 dt {
+  background: rgba(255,233,88,0.7); /* 「Q」タイトルの背景色 */
+  color: #3f3531; /* 「Q」タイトルの文字色 */
+  color:#705339;
+  padding: 8px;
+  border-radius: 2px;
+}
+#QandA-1 dt:before {
+  content: "Q.";
+  font-weight: bold;
+  margin-right: 8px;
+}
+#QandA-1 dd {
+  margin: 24px 16px 40px 32px;
+  line-height: 140%;
+  text-indent: -24px;
+  color:#705339;
+}
+#QandA-1 dd:before {
+  content: "A.";
+  font-weight: bold;
+  margin-right: 8px;
+}
+.dotted_line{
+  border-top: 1px dashed #705339;
+}
+
+/*パソコン
+================================================= */
+
+@media screen and (min-width:1025px){
+
+  /* =================================================
+  全体指定
+  ================================================= */
+
+  body {
+    font-size:16px;
+    line-height:2em;
+    font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  html {
+    scrollbar-arrow-color:#555;
+    scrollbar-face-color:#555;
+    scrollbar-3dlight-color:#555;
+    scrollbar-darkshadow-color:#555;
+    scrollbar-highlight-color:#555;
+    scrollbar-shadow-color:#555;
+    scrollbar-track-color:#fff;
+    height: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    vertical-align: bottom;
+  }
+
+  /* =================================================
+  見出し・文字
+  ================================================= */
+
+  h1{
+    margin-top: 90px;
+    line-height: 70px;
+  }
+
+  h2{
+    margin:0px 0px 60px;
+    font-size:50px;
+  }
+
+  /* =================================================
+  その他
+  ================================================= */
+
+  /*全体のレイアウト*/
+
+  #wrapper{
+    margin:0px auto;
+    padding:80px 40px 90px;
+    width:1200px;
+  }
+
+  main,section{
+    margin-bottom:80px;
+    width:800px;
+  }
+
+  main{
+    margin-bottom:250px;
+  }
+
+  /* =================================================
+  ヘッダー
+  ================================================= */
+
+  /* ヘッダーにあるメニュー */
+
+  nav {
+    margin: 60px 0px 170px;
+  }
+
+  nav ul{
+    font-size:180%;
+  }
+
+  nav ul li{
+    color:#705339;
+    margin:0px 10px;
+  }
+  a{
+    color:#705339;
+  }
+
+}
+
+/* タブレット端末
+================================================= */
+
+@media screen and (min-width:737px) and (max-width:1024px){
+
+  /* =================================================
+  全体指定
+  ================================================= */
+
+  body {
+    font-size:14px;
+    line-height:2em;
+    font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    vertical-align: bottom;
+  }
+
+  /* =================================================
+  見出し・文字
+  ================================================= */
+
+  h1{
+    margin-top: 60px;
+    padding: 25px;
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  h2 {
+    margin-bottom:35px;
+    font-size:38px;
+  }
+
+  h2:after {
+    height: 10px;
+  }
+
+  h3{
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+
+  h3:after{
+    border-width: 20px 10px 20px 0px;
+  }
+
+  h3::before{
+    border-width: 20px 0px 20px 10px;
+  }
+
+  /* =================================================
+  その他
+  ================================================= */
+
+  /*全体のレイアウト*/
+
+  #wrapper{
+    margin:0px auto;
+    padding:60px 40px 50px;
+    width:80%;
+    background-size:100%;
+  }
+
+  section{
+    margin-bottom:60px;
+  }
+
+  main{
+    margin-bottom:100px;
+  }
+
+  /*ボックスデザイン 余白調整*/
+
+  .box1,.box2 {
+    padding:10px;
+  }
+
+  .naka{
+    padding:10px;
+  }
+
+  /* =================================================
+  ヘッダー
+  ================================================= */
+
+  /* ヘッダーにあるメニュー */
+
+  nav {
+    margin: 25px 0px;
+  }
+
+  nav ul{
+    font-size:160%;
+  }
+
+}
+
+
+/*スマホ
+================================================= */
+
+@media screen and (min-width:0px) and (max-width:736px){
+
+
+  /* =================================================
+  全体指定
+  ================================================= */
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html{
+    font-size: 62.5%;
+    height: 100%;
+  }
+
+  body {
+    width:100%;
+    font-size: 1.3rem;
+    line-height:1.7em;
+    font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  img {
+    height: auto;
+    width: auto;
+    max-width:100%;
+    vertical-align: bottom;
+  }
+
+
+  /* =================================================
+  見出し・文字
+  ================================================= */
+
+  h1{
+    margin-top: 80px;
+    font-size:28px;
+    padding:20px;
+    line-height: 30px;
+  }
+
+  h2 {
+    margin-bottom:30px;
+    font-size:32px;
+  }
+
+  h2:after {
+    height: 7px;
+  }
+
+  h3{
+    margin:10px 0px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+
+  h3:after{
+    border-width: 20px 10px 20px 0px;
+  }
+
+  h3::before{
+    border-width: 20px 0px 20px 10px;
+  }
+
+  p{
+    margin:15px 0px;
+  }
+
+  /* =================================================
+  その他
+  ================================================= */
+
+  /*全体のレイアウト*/
+
+  #wrapper{
+    padding:40px 10px 25px;
+    width:100%;
+    background-size:100%;
+  }
+
+  section{
+    margin-bottom:35px;
+  }
+
+  main{
+    margin-bottom:40px;
+  }
+
+  /*ボックスデザイン 余白調整*/
+
+  .box1,.box2 {
+    padding:7px;
+  }
+
+  .naka{
+    padding:7px;
+  }
+
+
+}
