@@ -743,7 +743,7 @@ class TestController extends BaseController
   /*★★★★ログイン関連　ここから★★★★*/
 
   /*
-  *　ログイン関連 美容師ログイン　
+  *　ログイン関連 美容師新規会員登録　
   */
   public function stylist_signup(Request $request){
 
